@@ -1,0 +1,12 @@
+nsort: Natural sort a newline-delimited file.
+
+Usage: nsort [options] file
+
+Options:
+  --help         Show this help text
+  --version      Show version number and exit
+
+Examples:
+
+  $ nsort list.txt
+  $ cat list.txt | nsort

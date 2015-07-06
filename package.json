@@ -1,0 +1,37 @@
+{
+  "name": "nat-sort",
+  "version": "0.0.0",
+  "description": "A human sort, either as a module or CLI.",
+  "main": "lib/index.js",
+  "bin": {
+    "nsort": "./bin/nsort.js"
+  },
+  "scripts": {
+    "test": "npm run compile && babel test/index.js | node",
+    "prepublish": "npm run compile",
+    "start": "babel-node babel-run.js",
+    "compile": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fardog/nat-sort.git"
+  },
+  "keywords": [
+    "sort",
+    "natural"
+  ],
+  "author": "Nathan Wittstock <nate@milkandtang.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fardog/nat-sort/issues"
+  },
+  "homepage": "https://github.com/fardog/nat-sort#readme",
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "concat-stream": "^1.5.0"
+  }
+}
