@@ -3,16 +3,16 @@ const NUM_REX = /^\d+(\.\d+)?/
 module.exports = nsort
 
 function nsort(arr = []) {
-  return arrayify(arr).sort(compare)
+  return _arrayify(arr).sort(compare)
 }
 
 nsort.compare = compare
-nsort.arrayify = arrayify
-nsort.process = process
+nsort._arrayify = _arrayify
+nsort._process = _process
 
 function compare(_a, _b) {
-  const a = process(_a)
-      , b = process(_b)
+  const a = _process(_a)
+      , b = _process(_b)
 
   for(let i = 0; i < Math.max(a.length, b.length); ++i) {
     // shortest string wins if we run out of characters
@@ -52,11 +52,11 @@ function compare(_a, _b) {
   return 0
 }
 
-function arrayify(obj) {
+function _arrayify(obj) {
   return Array.isArray(obj) ? obj : [obj]
 }
 
-function process(str) {
+function _process(str) {
   return String(str)
     .trim()
     .replace(/^(the|a|an)\ /i, '')
