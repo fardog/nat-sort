@@ -15,6 +15,7 @@
     "brace-style": [2, "1tbs", { "allowSingleLine": false }],
     "no-unused-vars": 2,
     "no-use-before-define": [2, "nofunc"],
+    "no-underscore-dangle": 0,
     "global-strict": [2, "never"],
     "strict": 0
   }
