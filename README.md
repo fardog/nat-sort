@@ -5,6 +5,8 @@ A human sort, either as a module or CLI.
 [![Build Status](http://img.shields.io/travis/fardog/nat-sort/master.svg?style=flat)](https://travis-ci.org/fardog/nat-sort)
 [![npm install](http://img.shields.io/npm/dm/nat-sort.svg?style=flat)](https://www.npmjs.org/package/nat-sort)
 
+![Usage Example Video](./example.gif)
+
 ## Example
 
 As a library:
